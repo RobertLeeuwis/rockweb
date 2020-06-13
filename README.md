@@ -1,8 +1,10 @@
 # RockWeb
 
-RockWeb can be imported as a maven project.
+RockWeb can be imported as a maven project and uses a maven-wrapper which can be installed using:
 
-to start the webserver use (Unix)
+    mvn -N io.takari:maven:wrapper
+
+upon installing the following command can be used to start the webserver (Unix)
 
     ./mvnw spring-boot:run
 
@@ -12,7 +14,7 @@ Or (Windows)
 
 By default RockWeb expects a postgres database named 'rockweb'.
 
-This among other setting can be modified at src/main/resources > application.properties
+This among other settings can be modified at src/main/resources > application.properties
 
 necessary tables and sequences will be created upon startup.
 
